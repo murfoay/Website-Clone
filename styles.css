@@ -1,0 +1,385 @@
+html{
+    scroll-behavior: smooth;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*General*/
+
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+
+button
+{
+    cursor: pointer;
+    border: 0;
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+
+h2,p
+{
+    margin: 0 0 2vmax 2vmax; 
+    color: white;
+}
+
+h2
+{
+    font-size: 40px;
+    color: white;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+/*Landing*/
+
+.landing
+{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    background-color: aqua;
+}
+
+.hero
+{
+    width: 65vmax;
+    background-color: rgb(25, 146, 232);
+}
+
+h1
+{
+padding-left:2vmax;
+font-size: 60px;
+}
+
+.title, .hero p, .hero button
+{
+    margin: 0 0 2vmax 4vmax;
+    position:relative;
+    top: 20vmin;
+}
+
+.title
+{
+    margin-left:0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 65vmax;
+    margin-bottom: 0%;
+}
+
+.title-block-1, .title-block-2
+{
+    background-color: aqua;
+    width:1vmax;
+    height:100px;
+    align-self: center;
+}
+
+.title-block-filler
+{
+    flex-grow: 1;
+}
+
+.nav-bar{
+    position:absolute;
+    left: 65vmax;
+}
+.nav-bar button{
+    font-weight:bold;
+    background: aqua;
+color:white;
+width: 11vmax;
+}
+.nav-bar button:hover{
+    color:black;
+    width: 11vmax;
+    background-color:white;
+    }
+    
+
+.menu
+{
+    display: none;
+}
+
+.landing img
+{
+    width:35vmax;
+    height:600px;
+    object-fit: cover;
+}
+
+/*Content*/
+
+.center
+{
+    padding-top: 10vh;
+    background-color: rgba(23, 16, 216, 0.8);
+    width: 100vmax;
+}
+
+.mid1, .mid2
+{
+    padding: 10vmin 5vmax;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.mid2
+{
+    flex-direction: row-reverse;
+}
+
+.text
+{
+    display: block;
+    width: 49vmax;
+}
+
+.image
+{
+    width:220px;
+    height:180px;
+    background: linear-gradient(90deg, #cfcfcf21, #94812e);
+    transform: rotate(-40deg);    
+}
+
+.image img
+{
+    width:180px;
+    height:180px;
+    transform: rotate(40deg);
+}
+
+/*Tags*/
+
+.radio
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5vmax 8vmax;
+}
+
+.side
+{
+    width: 25vmax;
+    height: 70vmin;
+    object-fit: cover;
+    padding-right: 10vmax;
+}
+
+.radio-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tag, .tag-header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.tag-block,.tag-header-block 
+{
+    height:6vh;
+    align-self: center;
+}
+
+.tag-block
+{
+    width:2vh;
+    background-color: rgba(28, 26, 85, 0.8);
+    border-radius:50px
+}
+
+.tag-header h2{
+    font-size:3s0px
+}
+
+.tag h3{
+    color:white;
+}
+
+.radio-right h2
+{
+    margin: 0 2vmax 0;
+    padding-left: 4vmax;
+}
+
+h3
+{
+    align-self: center;
+    padding-left:5vmin;
+    font-size: 3vmin;
+}
+
+.radio-right img
+{
+    width: 5vmax;
+    height: 5vmax;
+    padding-left: 6vmax;
+}
+
+/*Footer*/
+
+.b-floater{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(25, 146, 232);
+    padding: auto 5vmax;
+    height: 300px;
+    width: 100vmax;
+}
+.b-floater h2{
+    padding-top:10vmin;
+}
+
+
+
+/*External*/
+.Arc{
+color: white; 
+}
+.main_button{
+    background-color: white;
+    border-radius: 5px;
+}
+.main_button:hover{
+    background-color:rgb(25, 146, 232);
+    color: white;
+    border: 2px solid white;
+
+}
+
+.Feedback_Button{
+    border-radius: 5px;
+}
+.Feedback_Button:hover{
+    border-radius: 5px;
+    color:white;
+    background-color:rgb(25, 146, 232);
+    border:2px solid white;
+}
+
+@media(max-width:900px)
+{
+    .landing img,.nav-bar button, .tag-header-block,.tag-block
+    {
+        display: none;
+    }
+    .hero
+    {
+        background-color: rgba(0,0,0,0);
+    }
+    .title
+    {
+        width: 99vw;
+    }
+    
+    .menu
+    {
+        cursor: pointer;
+        display: block;
+        background-image: url("assets/media/menu-button.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        left: 90vw;
+        bottom: 45vh;
+        width: 5vmax;
+        height: 5vmax;
+    }
+    
+    .title-block-1, .title-block-2
+    {
+        background-color: rgb(25, 146, 232);
+    }
+    .main_button{
+        background-color: white;
+        border-radius: 5px;
+    }
+    .main_button:hover{
+        background-color:aqua;
+        color: white;
+        border: 2px solid white;
+    
+    }
+    .landing
+    {
+        background-image: url("assets/media/jean-landing.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .radio
+    {
+        flex-direction: column-reverse;
+    }
+    .side
+    {
+        align-self: center;
+        padding: 30px 0;
+    }
+    .radio-right
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .radio-right h2
+    {
+        width:100%;
+        padding-left: 0;
+        padding-bottom: 5vh;
+    }
+    .tag
+    {
+        width:50%;
+    }
+    .tag img
+    {
+        padding: 8px;
+        width: 50px;
+        height: 50px;
+    }
+    .b-floater{
+        background-color:aqua;
+    }
+    .Feedback_Button:hover{
+        background-color:aqua;
+    }
+
+    
+}
